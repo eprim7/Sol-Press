@@ -1,0 +1,27 @@
+.h1{
+    font-size: large;
+    font-weight: bold;
+    color: #205D24;
+    text-align: center;
+}
+.footer{
+    width: 100%;
+    height: 30%; /* Adjust the height as needed */
+    background-color: #AFAFAF; /* Example background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed; /* Fixed position */
+    bottom: 0; /* Stick to the top */
+    left: 0; /* Stick to the left edge */
+        
+}
+.div{
+    width: 100%;
+    bottom: 0;
+}
+.p{
+    text-align: center;
+    color: #205D24;
+    font-size: medium;
+}
