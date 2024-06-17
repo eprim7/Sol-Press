@@ -14,14 +14,36 @@
     position: fixed; /* Fixed position */
     bottom: 0; /* Stick to the top */
     left: 0; /* Stick to the left edge */
-        
+    text-align: center;
 }
-.div{
+.outsideDiv{
     width: 100%;
     bottom: 0;
+    display: flex;
+    margin: 0 auto;
 }
 .p{
     text-align: center;
     color: #205D24;
     font-size: medium;
+}
+.contactDiv{
+    margin: 5%;
+}
+.contactH2{
+    color: #205D24;
+    text-align: center;
+}
+.contactP{
+    color: #205D24;
+    display: flex;
+}
+.a{
+    color: #205D24;
+    display: flex;
+    text-align: center;
+}
+.followDiv{
+    margin: 5%;
+    text-align: center;
 }
