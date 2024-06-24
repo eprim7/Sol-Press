@@ -1,32 +1,26 @@
 .footer {
-    height: 15%;
     width: 100%;
     background-color: #AFAFAF;
     display: flex;
     justify-content: center;
-    position: static;
-    bottom: 0; /* Hide footer initially */
     text-align: center;
     padding: 20px 0;
     flex-wrap: wrap;
-    transition: bottom 0.3s; /* Smooth transition */
-}
-
-.footer.visible {
-    bottom: 0; /* Show footer when visible */
 }
 
 .outsideDiv {
     width: 100%;
-    display:inline-flex;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .testimonials, .contactDiv, .followDiv, .findUs {
-    max-width: 20%;
     flex: 1;
+    min-width: 250px;
     margin: 10px;
+    box-sizing: border-box;
 }
 
 .testimonials {
@@ -57,7 +51,7 @@
 }
 
 .icons {
-    margin-right: 5%;
+    margin-right: 5px;
 }
 
 .socialMedia {
@@ -67,11 +61,39 @@
     align-items: center;
 }
 
-.a{
+.a {
     display: inline-block;
     margin: 0 5px;
 }
 
 .a:hover {
     color: #23a825;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .testimonials, .contactDiv, .followDiv, .findUs {
+        min-width: 45%; /* Adjust width for larger screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .outsideDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonials, .contactDiv, .followDiv, .findUs {
+        min-width: 90%; /* Adjust width for smaller screens */
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .h2 {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+    }
+    .socialMedia {
+        height: 25px;
+        width: 25px;
+    }
 }

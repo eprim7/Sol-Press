@@ -1,11 +1,132 @@
-.h1{
+.container {
+    padding-top: 100px; /* Adjust this based on your header height */
+    padding-bottom: 20px; /* Optional, for better spacing at the bottom */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1 {
     color: #205D24;
     text-align: center;
     font-weight: bold;
-    font-size: 3em;
+    margin-bottom: 20px; /* Add margin for spacing */
 }
-.h3{
+
+.h3 {
     text-align: center;
     color: #4c9a51;
     font-size: 1.25em;
+    margin-bottom: 20px; /* Add margin for spacing */
+}
+
+.contactContainer {
+    font-family: 'outfit';
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    padding: 20px; /* Optional, for better spacing inside the container */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.contactLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%; /* Full width for better responsiveness */
+    max-width: 600px; /* Limit maximum width */
+}
+
+.contactInputs {
+    width: 100%; /* Full width for better responsiveness */
+    height: 50px;
+    border: 1px solid black;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #667;
+    border-radius: 50px;
+    margin-bottom: 15px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.contactInputs::placeholder {
+    color: #999; /* Adjust placeholder color for better visibility */
+}
+
+textarea.contactInputs {
+    height: auto; /* Allow height to adjust based on content */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.submitButton {
+    width: 100px; /* Adjust width if needed */
+    height: 40px; /* Adjust height if needed */
+    border-radius: 10px;
+    border: none; /* Remove border if you want a cleaner look */
+    background-color: #4c9a51;
+    color: white; /* Ensure text is visible on the button */
+    cursor: pointer;
+    margin-top: 15px; /* Add margin for spacing */
+}
+
+.submitButton:hover {
+    background-color: #205D24;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding-top: 80px; /* Adjust padding for smaller screens */
+    }
+
+    .h1 {
+        font-size: 1.5em; /* Adjust font size for better readability */
+    }
+
+    .h3 {
+        font-size: 1em; /* Adjust font size for better readability */
+    }
+
+    .contactContainer {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .contactLeft {
+        gap: 15px; /* Reduce gap between form elements */
+    }
+
+    .contactInputs {
+        height: 45px; /* Reduce height for better fit */
+    }
+
+    .submitButton {
+        width: 80px; /* Reduce width for smaller screens */
+        height: 35px; /* Reduce height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-top: 60px; /* Further adjust padding for smallest screens */
+    }
+
+    .h1 {
+        font-size: 1.25em; /* Further adjust font size */
+    }
+
+    .h3 {
+        font-size: 0.9em; /* Further adjust font size */
+    }
+
+    .contactInputs {
+        height: 40px; /* Further reduce height */
+    }
+
+    .submitButton {
+        width: 70px; /* Further reduce width */
+        height: 30px; /* Further reduce height */
+    }
 }
